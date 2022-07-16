@@ -1,0 +1,9 @@
+<launch>
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" > 
+        <arg name="port" value="9900"/>
+    </include>
+
+    <!-- <node name="node1" pkg="IRIS" type="node1" output= "screen" respawn="true"/> -->
+    <node name="node2" pkg="IRIS" type="node2" output= "screen" respawn="true"/>
+    <!-- <node name="node3" pkg="IRIS" type="node3" output="screen" respawn="true" /> -->
+</launch>
